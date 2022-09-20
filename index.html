@@ -2,19 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="/vue-ewather/assets/favicon.3c7e6317.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/vue-ewather/assets/apple-touch-icon.882f145e.png">
+    <link rel="shortcut icon" href="/vue-weather/assets/favicon.3c7e6317.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/vue-weather/assets/apple-touch-icon.882f145e.png">
     <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA8FBMVEUAAAAuY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY70tYrssX7kqXbYpXLQtYbsqXbQqWq03YqhLcKdYeqguYr0sX7hJbqeHnqy1wbLJ0LbP1beInqxJb6crXrYvXal1kKrCy7TV2rfW2rHa3aXd35yHnazR17bW2bLh4pPy72369Vr9+FTW2q3s63r9+FP/+k7/+U//+VAsYLn///8yrNkGAAAAJHRSTlMAAAQpba3a8/0qAzeX3/vgmBqJ6jXC/kHZNtjBAoo46d5s8qzBFOMDAAAAAWJLR0RPbmZBSQAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAAd0SU1FB+YJFAcHCwN+qUwAAAF/SURBVDjLhZPpdoIwEIUzKopr675WK3VDAu62KgqCori9/+PURChqPSf3V8h8JxMm9yLkCHz+ABcM8XwoyAXCPkCPgkg0Fk80HCXe3qORewQgmUo3HpROJQG8eiabazwpl824BEC+4G43r3LXhfyNACg69War3RHFTrvlMKUiJSBZvpW7EpaVXk+RsdS9IeXkFYBKin70B3g4Gk+m08n4+wcP+nTzowIIqjVan80X6nKl6bq2WqqL+YwStSqgSIyeP5ivDXOztXY7a7sxjfV8QLvEIigcJ4suXhh7+3A8nc+n48HeGwvcJfufYRQg82tKQ9W0z3+yTXUokSMSdcQRsIVHy83BAw6b5Qi3SIVDdAZtebzaHj3guF2N5QudFhJIh44y0ayTB5wsbaJ0SA8B8QQQe1N9d77TTp/2RALwbIDZgnlJxm9+sQfFHDXzsZjP/cIwo6FrmFQF2JYjpi+5pr28Mi3T9uzgsKP3P7zxp/A68a9zBYHnhSBX93vx/wWF3pkEfufOFwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMi0wOS0yMFQwNzowNzoxMSswMDowMN3BtGMAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjItMDktMjBUMDc6MDc6MTErMDA6MDCsnAzfAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==">
     <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAdVBMVEUAAAAuY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74uY74tYr0rX7osX7gsYLs7aLJqibCLorBMdK+uu67g4Zbu7H7u7H/++FP/+k79+FP/+U//+VArX7hMdLD///8LdIA+AAAAEnRSTlMAAAdJqOT7GJLvsQbtp+Ow7khuqWMuAAAAAWJLR0QmWgiYtQAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAAd0SU1FB+YJFAcHCwN+qUwAAACbSURBVBjTZY9JEoMwDASlGLDZk8Gsttn5/xeDyYUUc5OqpOkmIn6JIIyiMBAvpnNkqWJciZVkJpYJUOm61hWQSKZUAU3b9X3XNoBKSWRoBmOds2ZokAnKUbVmnOZ5Gk1bIacCurPLum3rYjuNgiLUvZu3M7Pra0T/i/1cPE4eT33t8as9rtoHGMvSo++7Ry9PdC/3vst5/c9N/wt2hxIHG6paSAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMi0wOS0yMFQwNzowNzoxMSswMDowMN3BtGMAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjItMDktMjBUMDc6MDc6MTErMDA6MDCsnAzfAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==">
-    <link rel="mask-icon" href="/vue-ewather/assets/safari-pinned-tab.ef92233a.svg" color="#2e63bd">
+    <link rel="mask-icon" href="/vue-weather/assets/safari-pinned-tab.ef92233a.svg" color="#2e63bd">
     <meta name="msapplication-TileColor" content="#2e63bd">
     <meta name="theme-color" content="#2e63bd">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Whats the weather like?">
     <title>WhatWeather</title>
-    <script type="module" crossorigin src="/vue-ewather/assets/index.08082564.js"></script>
-    <link rel="stylesheet" href="/vue-ewather/assets/index.6153fb23.css">
-  <link rel="manifest" href="/vue-ewather/manifest.webmanifest"><script src="/vue-ewather/registerSW.js"></script></head>
+    <script type="module" crossorigin src="/vue-weather/assets/index.08082564.js"></script>
+    <link rel="stylesheet" href="/vue-weather/assets/index.6153fb23.css">
+  <link rel="manifest" href="/vue-weather/manifest.webmanifest"><script src="/vue-ewather/registerSW.js"></script></head>
   <body>
     <div id="app"></div>
     
